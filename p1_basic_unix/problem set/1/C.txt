@@ -1,0 +1,5 @@
+  252  grep "statistics" "src/exe/demo_1.txt" | tee "src/utilities/grep_stat_demo1.txt"
+  253  grep -r "statistics" | tee "cache/images/grep_stat_all.txt"
+  254  find -type f -name "*.txt" > "test/basic/test_3.txt"
+  255  find -type f -name "*.txt" -exec grep -l "statistics" {} \;
+  256  history | tail -n 5 >> history.txt
